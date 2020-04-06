@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+    @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+        h1, h2, h4, h5, h6 {
+            font-family: 'PT Sans', 'Helvetica', 'Arial';;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'PT Serif', 'Helvetica', 'Arial';
+        }
+        #topbar{
+            width: 100%;
+            background: #F1F1F1; /* light gray */
+            border-bottom: 1px solid #D4D4D4; /* dark gray "underline" */
+            height: 25px;
+        }
+        .normal-wrapper{
+            width: 900px;
+            margin: 0 auto;
+            padding: 15px 40px;
+            overflow: auto;
+        }
+        h1 {
+            color: blue;
+            float: left;
+            margin: 21px 0 0 0px;
+        }
+        h2 {
+            color: blue;
+        }
+        #navbar {
+            list-style-type: none;
+            margin: 29px 0 0 0;
+            padding: 0;
+            float: right;
+            font-size: 16pt;
+        }
+        #navbar li{
+            display: inline;
+        }
+        #navbar li a:link, #navbar li a:visited, #navbar li a:active {
+            text-decoration: none;
+            color: #000000;
+            padding: 0 16px 0 10px;
+            margin: 0;
+            border-right: 2px solid #B4B4B4;
+        }
+        #navbar li a:link.last-link {
+            border-right: 0px;
+        }
+        #navbar li a:hover {
+            color: #EB6361;
+        }
+        #top-color-splash{
+            width: 100%;
+            height: 4px;
+            background: #EB6361;
+        }
+        .one-third {
+            width: 40%;
+            float: left;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+        .two-third {
+            width: 60%;
+            float: left;
+            box-sizing: border-box;
+            padding-left: 40px;
+            text-align: right;
+            margin-top: 20px;
+        }
+        .featured-image {
+            max-width: 500px;
+        }
+        .no-margin-top {
+            margin-top: 0;
+        }
+        .no-margin {
+            margin-top: 20px;
+            width: 40%;
+            float: left;
+            box-sizing: border-box;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div id = 'topbar'></div>
+<!--    <div class="image">-->
+<!--        <img src="./image/Image_1.JPG" alt="" style="width: 80px; height: 80px">-->
+<!--    </div>-->
+<div class = 'normal-wrapper'>
+
+    <div id="logo-container">
+
+        <h1>CodeGym</h1>
+    </div>
+
+    <ul id="navbar">
+        <li><a href="">Home</a></li>
+        <li><a href="http://localhost:63342/QLSP/index.html">About Us</a></li>
+        <li><a href="http://localhost:63342/QLSP/QLSP.html">CodeGym Course</a></li>
+        <li><a href="">Promotion</a></li>
+        <li><a href="" class="last-link">Contact</a></li>
+    </ul>
+</div>
+
+<div id="top-color-splash"></div>
+<div class="normal-wrapper">
+    <div class="one-third">
+        <h2 class="no-margin-top"> Tầm nhìn </h2>
+        <p>
+            Trở thành hệ thống đào tạo lập trình hiện đại hàng đầu khu vực, là chủ lực cung cấp nhân lực chất lượng cao cho ngành
+            công nghiệp, góp phần nâng tầm phát triển ngành phần mềm Việt Nam, tiến kịp tiêu chuẩn quốc tế.
+        </p>
+        <h2 class="no-margin-top">Triết lý đào tạo</h2>
+        <p> 1. Bất kỳ ai cũng có thể học nghề từ con số 0 đến trở thành 1 nghệ nhân.</p>
+        <p> 2. Chỉ bằng rèn luyện tay nghề liên tục, toàn tâm và nghiêm túc mới có thể thành nghệ nhân.</p>
+        <p>3. Sản phẩm của một nghệ nhân tạo ra phải tinh xảo, độc đáo, mang nét riêng và là niềm tự hào của người nghệ nhân</p>
+    </div>
+    <div class="two-third">
+        <img class="featured-image" src="./image/Image_1.JPG" alt="">
+    </div>
+</div>
+</body>
+</html>
