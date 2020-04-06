@@ -3,125 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-        @import url('https://fonts.googleapis.com/css?family=PT+Serif');
-
-        h1, h2, h4, h5, h6 {
-            font-family: 'PT Sans', 'Helvetica', 'Arial';;
-        }
-
-        html, body {
-            margin: 0;
-            padding: 0;
-            font-family: 'PT Serif', 'Helvetica', 'Arial';
-        }
-        #topbar{
-            width: 100%;
-            background: #F1F1F1; /* light gray */
-            border-bottom: 1px solid #D4D4D4; /* dark gray "underline" */
-            height: 25px;
-        }
-        .normal-wrapper{
-            width: 900px;
-            margin: 0 auto;
-            padding: 15px 40px;
-            overflow: auto;
-        }
-        h1 {
-            color: blue;
-            float: left;
-            margin: 21px 0 0 0px;
-        }
-        h2 {
-            color: blue;
-        }
-        #navbar {
-            list-style-type: none;
-            margin: 29px 0 0 0;
-            padding: 0;
-            float: right;
-            font-size: 16pt;
-        }
-        #navbar li{
-            display: inline;
-        }
-        #navbar li a:link, #navbar li a:visited, #navbar li a:active {
-            text-decoration: none;
-            color: #000000;
-            padding: 0 16px 0 10px;
-            margin: 0;
-            border-right: 2px solid #B4B4B4;
-        }
-        #navbar li a:link.last-link {
-            border-right: 0px;
-        }
-        #navbar li a:hover {
-            color: #EB6361;
-        }
-        #top-color-splash{
-            width: 100%;
-            height: 4px;
-            background: #EB6361;
-        }
-        .one-third {
-            width: 40%;
-            float: left;
-            box-sizing: border-box;
-            margin-top: 20px;
-        }
-        .two-third {
-            width: 60%;
-            float: left;
-            box-sizing: border-box;
-            padding-left: 40px;
-            text-align: right;
-            margin-top: 20px;
-        }
-        .featured-image {
-            max-width: 500px;
-        }
-        .no-margin-top {
-            margin-top: 0;
-        }
-        .no-margin {
-            margin-top: 20px;
-            width: 40%;
-            float: left;
-            box-sizing: border-box;
-        }
-        table {
-            margin-top: 20px;
-            border-collapse: collapse;
-        }
-        .normal-td-button{
-            width: 50px;
-            height: 40px;
-            text-align: center;
-        }
-        .normal-td-sort {
-            width: 60px;
-            height: 40px;
-            text-align: center;
-        }
-        .normal-td-middle {
-            width: 150px;
-            height: 40px;
-            text-align: center;
-        }
-        .normal-td-long {
-            width: 300px;
-            height: 40px;
-            text-align: center;
-        }
-        .input-style {
-            width: 140px;
-            height: 30px;
-        }
-
-    </style>
-
-
+    <link rel="stylesheet" href="index.css">
 
 </head>
 <body>
@@ -160,9 +42,23 @@
         </tr>
     </table>
 
-    <div><button onclick="prepairAddProduct()">ADD</button></div>
-    <div><button onclick="reProduct()">CANCEL</button></div>
-    <div><button onclick="addProduct()">SAVE</button></div>
+    <div onmousedown="prepairAddProduct()" class="icon-outer">
+        <div class="icon-rectangle1">
+            <b><i>New</i></b>
+        </div>
+    </div>
+
+    <div onmousedown="reProduct()" class="icon-outer">
+        <div class="icon-rectangle1">
+            <b><i>Cancle</i></b>
+        </div>
+    </div>
+
+    <div onmousedown="addProduct()" class="icon-outer">
+        <div class="icon-rectangle1">
+            <b><i>Save</i></b>
+        </div>
+    </div>
 
 <script src="mainProductManager.js"></script>
 <script src="addNewProduct.js"></script>
