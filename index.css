@@ -137,11 +137,11 @@ table {
 .icon-rectangle1{
     text-align: center;
     background: #f4fef7;
-    color: red;
+    color: blue;
     width: 60px;
     height: 40px;
     margin: 0 auto;
-    border: 2px solid red;
+    border: 2px solid blue;
     box-sizing: border-box;
     font-size: 13pt;
     padding: 5px 0 0 0;
@@ -150,4 +150,8 @@ table {
 .icon-rectangle1:hover{
     color: #FFFFFF;
     background: #EB6361;
+}
+.image {
+    width: 100px;
+    height: 100px;
 }

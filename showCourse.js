@@ -31,3 +31,7 @@ function showCourse() {
     document.getElementById('table1').innerHTML = course;
 }
 showCourse();
+function showImage() {
+    let image =  '<img src="https://kenh14cdn.com/2019/10/4/screen-shot-2019-10-04-at-104637-am-15701611834761251589743.png" style="width: 400px; height: 400px" alt="">'
+    document.getElementById('Detail').innerHTML = image
+}
